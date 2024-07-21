@@ -1,0 +1,20 @@
+
+<h2>Update list</h2>
+<style>
+    form{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  rgb(41, 190, 198);
+
+    }
+
+</style>
+
+    <form method="POST" action="">
+        {% csrf_token %} 
+        {{form}}
+        <a href="{% url 'lists'%}"><input type="submit" name="update Task"></a>
+    </form>
+
